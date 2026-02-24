@@ -11,6 +11,7 @@ import {
   Hash,
   FileText,
   MessageSquare,
+  type LucideIcon,
 } from "lucide-react";
 import { useFlowStore } from "../store/useFlowStore";
 
@@ -33,7 +34,7 @@ function InputField({
   multiline,
 }: {
   label: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   value: string;
   onChange: (v: string) => void;
   error?: string;
